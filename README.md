@@ -9,6 +9,14 @@ TBD
 
 - [Ubuntu 18.04 or above](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
 - C++ dependencies
+     
+   ```bash
+   sudo apt-get install libblas-dev liblapack-dev
+   sudo apt-get install gfortran
+   sudo apt-get install freeglut3-dev
+   https://gitlab.com/libeigen/eigen/-/releases/3.4.0
+   MKL
+   ```
 
 ## Installation
 
