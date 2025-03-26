@@ -1,9 +1,9 @@
 # DDG_Tutorial_Fast
-A fast C/C++ code for  DDG_Tutorial
+A fast C/C++ code for DDG_Tutorial
 
 ## Overview
 
-TBD
+This is a C/C++ version for the numerical simulation of flexible structures using the discrete differential geometry method. The simple MATLAB version for educational purposes can be found [here](https://github.com/weicheng-huang-mechanics/DDG_Tutorial).
 
 ## Prerequisites
 
