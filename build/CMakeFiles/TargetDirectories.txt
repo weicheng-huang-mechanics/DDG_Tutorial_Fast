@@ -1,0 +1,3 @@
+/home/dezhongt/Desktop/DDG_Tutorial_Fast/build/CMakeFiles/simDER.dir
+/home/dezhongt/Desktop/DDG_Tutorial_Fast/build/CMakeFiles/edit_cache.dir
+/home/dezhongt/Desktop/DDG_Tutorial_Fast/build/CMakeFiles/rebuild_cache.dir
