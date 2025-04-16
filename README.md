@@ -5,104 +5,80 @@ A fast C/C++ code for DDG_Tutorial
 
 This is a fast C/C++ implementation for the numerical simulation of flexible structures using the discrete differential geometry method. A simplified MATLAB version for educational purposes is available [here](https://github.com/weicheng-huang-mechanics/DDG_Tutorial).
 
-## Prerequisites
+## Dependencies
 
-- [Ubuntu 18.04 or above](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
-- C++ dependencies
-     
-   ```bash
-   sudo apt-get install libblas-dev liblapack-dev
-   sudo apt-get install gfortran
-   sudo apt-get install freeglut3-dev
-   https://gitlab.com/libeigen/eigen/-/releases/3.4.0
-   MKL
-   ```
+There are some dependencies required prior to compilation. All the codes are tested in the Ubuntun (linux) systems. For other operating systems, the users should be able to modify the commands below appropriately .
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/weicheng-huang-mechanics/DDG_Tutorial_Fast.git
-   cd DDG_Tutorial_Fast
-   ```
-   
-2. Install C++ dependencies
-
-- **Note**: Some of these packages are installed to the system library for convenience. You may want to install locally to e.g., `~/.local` to avoid conflicts with system libraries. Add the `cmake` flag: `-D CMAKE_INSTALL_PREFIX=~/.local`. Then `sudo` is not required to install. You'll need to ensure subsequent builds know where to find the build libraries.
-- Update the package list:
-  ```bash
-  sudo apt update
-  ```
-    
 - [Eigen 3.4.0](http://eigen.tuxfamily.org/index.php?title=Main_Page)
-  - Eigen is a C++ template library for linear algebra.
-  - Install via APT:
+  - Eigen is used for various linear algebra operations.
+  - DDG_Tutorial_Fast is built with Eigen version 3.4.0 which can be downloaded [here](https://gitlab.com/libeigen/eigen/-/releases/3.4.0). After downloading the source code, install through cmake as follows.
     ```bash
-    sudo apt update
-    sudo apt install libeigen3-dev
-    ```
-  - (Optional) Verify installation
-    ```bash
-    dpkg -s libeigen3-dev | grep Version
-    ```
-
-- [LLVM](https://releases.llvm.org/download.html)
-  - LLVM is a collection of tools for building compilers and optimizing code.
-  - Install via APT:
-    ```bash
-    sudo apt-get install llvm
-    ```
-  - (Optional) Verify installation
-    ```bash
-    llvm-config --version
-    ```
-    
-- [GMP](https://gmplib.org/)
-  - GMP is a free library for arbitrary precision arithmetic, operating on signed integers, rational numbers, and floating-point numbers.
-  - Install via APT:
-    ```bash
-    sudo apt install libgmp-dev
-    ```
-  - (Optional) Verify installation
-    ```bash
-    dpkg -l | grep libgmp
-    ```
+    cd eigen-3.4.0 && mkdir build && cd build
+    cmake ..
+    sudo make install
 
 - [Intel oneAPI Math Kernel Library (oneMKL)](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl-download.html?operatingsystem=linux&distributions=webdownload&options=online)
   - Necessary for access to Pardiso, which is used as a sparse matrix solver.
   - Intel MKL is also used as the BLAS / LAPACK backend for Eigen.
-  - Install via APT following the [official instruction](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl-download.html?operatingsystem=linux&linux-install=apt) Be sure to walk through both "Prerequisites for First-Time Users" and "Install with APT".
-  - Check the installation version:
-    By default, the installation directory path should be at `/opt/intel/oneapi/mkl`.
-    Look for the folder named `mkl`, for example `/opt/intel/oneapi/mkl/2025.0`.
-  - Set the MKL environment variable:
+  - **Ubuntu**: Follow the below steps.
     ```bash
-    export MKL_DIR=/opt/intel/oneapi/mkl/2025.0     # for newer versions
+    cd /tmp
+    wget https://registrationcenter-download.intel.com/akdlm/irc_nas/18483/l_onemkl_p_2022.0.2.136.sh
+
+    # This runs an installer, simply follow the instructions.
+    sudo sh ./l_onemkl_p_2022.0.2.136.sh
     ```
-  - Add the above corresponding environment variable to your `.bashrc` file.
+  - Add one of the following to your .bashrc so that cmake can find the MKL library. Change the directory accordingly if your MKL version is different.
+   Note that older versions require setting `MKLROOT` while newer versions require `MKL_DIR`.
+   You can find out which one from the cmake error message.
     ```bash
-    nano ~/.bashrc
-    ```
-  - Reload the `.bashrc` file to apply the changes:
-    ```bash
-    source ~/.bashrc
-    ```
-  - (Optional) Verify the MKL installation:
-    ```bash
-    echo $MKL_DIR
+    export MKLROOT=/opt/intel/oneapi/mkl/2022.0.2   # for older versions
+    export MKL_DIR=/opt/intel/oneapi/mkl/2024.2     # for newer versions
     ```
 
 - [OpenGL / GLUT](https://www.opengl.org/)
-  - OpenGL / GLUT is used for rendering the knot through a simple graphic.
-  - Install via APT
-    ```bash
-    sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev`
-    ```
+  - OpenGL / GLUT is used for barebones rendering through simple line graphics.
+  - Simply install through apt package manager:
+    - **Ubuntu**: `sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev`
 
-- [Lapack](https://www.netlib.org/lapack/) (*included in MKL*)
-
-3. Configure the simulation engine
+- Lapack (*included in MKL*)
 
 
-4. To simulate the bilayer robot with customized setting parameters, run
+- Some potential required C++ dependencies (usually pre-installed in the system)
+     
+   ```bash
+   sudo apt-get install liblapack-dev
+   sudo apt-get install gfortran
+   ```
+
+## Compiling and Running Examples in C++
+
+``DDG_Tutorial_Fast`` contains five examples for users to play around. Here, we utilize [CMAKE](https://cmake.org/) to compile the source files. In addition, a cmake flag ``BUILD_TARGET`` is used to specified which example is complied. The flag's value can be ``2d_curve``, ``2d_surface``, ``3d_curve``, ``3d_surface``, and ``hollow_net``. An example for ``2d_curve`` is presented below.
+
+
+   ```bash
+   cp inputdata/2d_curve/option.txt option.txt
+   mkdir build && cd build
+   cmake .. -DBUILD_TARGET=2d_curve
+   make -j4
+   cd ..
+   ```
+Afterwards, simply run the simulation using the ``run.sh`` script.
+
+```bash
+./run.sh
+```
+Note that the simulation parameters are contained in the ``option.txt`` and the user can modifed the values of them to see different physical effects in the simulation. 
+The geometrical characterization is included in the ``inputdata`` folder. For example, the geometry of ``2d_curve`` is contained in the folder ``inputdata/2d_curve/inputdata``.
+
+### Citation
+If our work has helped your research, please cite the following paper.
+```
+@article{huang2025DDG,
+    author = {Weicheng Huang and Zhuonan Hao and Jiahao Li and Dezhong Tong and Kexin Guo and Yingchao Zhang and Huajian Gao and K. Jimmy Hsia and Mingchao Liu},
+    title = {A tutorial on simulating nonlinear behaviors of flexible structures with the discrete differential geometry (DDG) method},
+    journal = {arxiv},
+}
+```
+
 
