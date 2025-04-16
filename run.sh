@@ -1,1 +1,0 @@
-./simDER option.txt
