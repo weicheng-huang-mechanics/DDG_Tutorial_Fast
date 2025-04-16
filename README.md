@@ -53,13 +53,13 @@ There are some dependencies required prior to compilation. All the codes are tes
 
 ## Compiling and Running Examples in C++
 
-``DDG_Tutorial_Fast`` contains five examples for users to play around. Here, we utilize [CMAKE](https://cmake.org/) to compile the source files. In addition, a cmake flag ``BUILD_TARGET`` is used to specified which example is complied. The flag's value can be ``2d_curve``, ``2d_surface``, ``3d_curve``, ``3d_surface``, and ``hollow_net``. An example for ``2d_curve`` is presented below.
+``DDG_Tutorial_Fast`` contains five examples for users to play around. Here, we utilize [CMAKE](https://cmake.org/) to compile the source files. In addition, a cmake flag ``TARGET_BUILD`` is used to specified which example is complied. The flag's value can be ``2d_curve``, ``2d_surface``, ``3d_curve``, ``3d_surface``, and ``hollow_net``. An example for ``2d_curve`` is presented below.
 
 
    ```bash
    cp inputdata/2d_curve/option.txt option.txt
    mkdir build && cd build
-   cmake .. -DBUILD_TARGET=2d_curve
+   cmake .. -DTARGET_BUILD=2d_curve
    make -j4
    cd ..
    ```
