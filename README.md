@@ -63,7 +63,7 @@ There are some dependencies required prior to compilation. All the codes are tes
    make -j4
    cd ..
    ```
-Afterwards, simply run the simulation using the ``run.sh`` script.
+Afterwards, simply run the simulation using the ``simDER`` script.
 
 ```bash
 ./simDER option.txt
