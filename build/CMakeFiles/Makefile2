@@ -81,12 +81,12 @@ clean: CMakeFiles/simDER.dir/clean
 CMakeFiles/simDER.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dezhongt/Desktop/DDG_Tutorial_Fast/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target simDER"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dezhongt/Desktop/DDG_Tutorial_Fast/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target simDER"
 .PHONY : CMakeFiles/simDER.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/simDER.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dezhongt/Desktop/DDG_Tutorial_Fast/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dezhongt/Desktop/DDG_Tutorial_Fast/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/simDER.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dezhongt/Desktop/DDG_Tutorial_Fast/build/CMakeFiles 0
 .PHONY : CMakeFiles/simDER.dir/rule

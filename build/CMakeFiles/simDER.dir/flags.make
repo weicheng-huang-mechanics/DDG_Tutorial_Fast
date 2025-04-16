@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DEIGEN_USE_MKL_ALL
 
-CXX_INCLUDES = -I/home/dezhongt/Desktop/DDG_Tutorial_Fast/src/2d_surface -isystem /opt/intel/oneapi/mkl/2023.2.0/include -isystem /usr/local/include/eigen3
+CXX_INCLUDES = -I/home/dezhongt/Desktop/DDG_Tutorial_Fast/src/hollow_net -isystem /opt/intel/oneapi/mkl/2023.2.0/include -isystem /usr/local/include/eigen3
 
 CXX_FLAGS = -Wno-deprecated-declarations -fopenmp -O3 -m64 -std=gnu++14
 

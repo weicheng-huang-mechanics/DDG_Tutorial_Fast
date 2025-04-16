@@ -48,12 +48,20 @@ add_executable(simDER
         src/${TARGET_BUILD}/timeStepper.cpp
 
         src/${TARGET_BUILD}/dampingForce.cpp
-        src/${TARGET_BUILD}/elasticBendingForce.cpp
         src/${TARGET_BUILD}/elasticPlate.cpp
         src/${TARGET_BUILD}/elasticStretchingForce.cpp
         src/${TARGET_BUILD}/externalGravityForce.cpp
         src/${TARGET_BUILD}/inertialForce.cpp
         )
+
+# Conditionally add twistingForce.cpp if TARGET_BUILD equals "xxx"
+if(TARGET_BUILD STREQUAL "3d_curve")
+    target_sources(simDER PRIVATE src/${TARGET_BUILD}/elasticTwistingForce.cpp)
+endif()
+
+if (NOT TARGET_BUILD STREQUAL "hollow_net")
+    target_sources(simDER PRIVATE src/${TARGET_BUILD}/elasticBendingForce.cpp)
+endif()
 
 
 target_include_directories(simDER PUBLIC

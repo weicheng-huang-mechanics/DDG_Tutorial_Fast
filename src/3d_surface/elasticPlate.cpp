@@ -462,7 +462,7 @@ void elasticPlate::setupGeometry()
 	triangularNum = 0;
 
 	ifstream inFile1;
-	inFile1.open("inputdata/nodesInput.txt");
+	inFile1.open("inputdata/3d_surface/inputdata/nodesInput.txt");
 	v_nodes.clear();
 	double a, b, c;
 	while(inFile1 >> a >> b >> c)
@@ -480,7 +480,7 @@ void elasticPlate::setupGeometry()
 
 
 	ifstream inFile2;
-	inFile2.open("inputdata/constraint.txt");
+	inFile2.open("inputdata/3d_surface/inputdata/constraint.txt");
 	constraint.clear();
 	int aa1;
 	while(inFile2 >> aa1)
@@ -491,7 +491,7 @@ void elasticPlate::setupGeometry()
 
 
 	ifstream inFile3;
-	inFile3.open("inputdata/edgeInput.txt");
+	inFile3.open("inputdata/3d_surface/inputdata/edgeInput.txt");
 	v_edgeElement.clear();
 	int d, e;
 	while(inFile3 >> d >> e)
@@ -508,7 +508,7 @@ void elasticPlate::setupGeometry()
 
 
 	ifstream inFile4;
-	inFile4.open("inputdata/triangleInput.txt");
+	inFile4.open("inputdata/3d_surface/inputdata/triangleInput.txt");
 	v_triangularElement.clear();
 	int aa, bb, cc;
 	while(inFile4 >> aa >> bb >> cc)

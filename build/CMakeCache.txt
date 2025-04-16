@@ -266,9 +266,6 @@ MKL_DIR:PATH=/usr/local/lib/cmake/mkl-2023.2.0
 //Path to a file.
 MKL_H:PATH=/opt/intel/oneapi/mkl/2023.2.0/include
 
-//Choose MKL_INTERFACE_FULL options are: intel_ilp64;intel_lp64
-MKL_INTERFACE_FULL:STRING=intel_ilp64
-
 //Choose MKL_LINK options are: static;dynamic;sdl
 MKL_LINK:STRING=dynamic
 
@@ -310,13 +307,10 @@ PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Choose which target to build: 2d_curve, 2d_surface, 3d_curve,
 // 3d_surface, hollow_net
-TARGET_BUILD:STRING=2d_surface
+TARGET_BUILD:STRING=hollow_net
 
 //Path to a library.
 mkl_core_file:FILEPATH=/opt/intel/oneapi/mkl/2023.2.0/lib/intel64/libmkl_core.so
-
-//Path to a library.
-mkl_intel_ilp64_file:FILEPATH=/opt/intel/oneapi/mkl/2023.2.0/lib/intel64/libmkl_intel_ilp64.so
 
 //Path to a library.
 mkl_intel_lp64_file:FILEPATH=/opt/intel/oneapi/mkl/2023.2.0/lib/intel64/libmkl_intel_lp64.so

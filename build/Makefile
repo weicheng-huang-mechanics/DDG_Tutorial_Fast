@@ -129,245 +129,221 @@ simDER/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/build
 .PHONY : simDER/fast
 
-src/2d_surface/dampingForce.o: src/2d_surface/dampingForce.cpp.o
-.PHONY : src/2d_surface/dampingForce.o
+src/hollow_net/dampingForce.o: src/hollow_net/dampingForce.cpp.o
+.PHONY : src/hollow_net/dampingForce.o
 
 # target to build an object file
-src/2d_surface/dampingForce.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/dampingForce.cpp.o
-.PHONY : src/2d_surface/dampingForce.cpp.o
+src/hollow_net/dampingForce.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/dampingForce.cpp.o
+.PHONY : src/hollow_net/dampingForce.cpp.o
 
-src/2d_surface/dampingForce.i: src/2d_surface/dampingForce.cpp.i
-.PHONY : src/2d_surface/dampingForce.i
+src/hollow_net/dampingForce.i: src/hollow_net/dampingForce.cpp.i
+.PHONY : src/hollow_net/dampingForce.i
 
 # target to preprocess a source file
-src/2d_surface/dampingForce.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/dampingForce.cpp.i
-.PHONY : src/2d_surface/dampingForce.cpp.i
+src/hollow_net/dampingForce.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/dampingForce.cpp.i
+.PHONY : src/hollow_net/dampingForce.cpp.i
 
-src/2d_surface/dampingForce.s: src/2d_surface/dampingForce.cpp.s
-.PHONY : src/2d_surface/dampingForce.s
+src/hollow_net/dampingForce.s: src/hollow_net/dampingForce.cpp.s
+.PHONY : src/hollow_net/dampingForce.s
 
 # target to generate assembly for a file
-src/2d_surface/dampingForce.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/dampingForce.cpp.s
-.PHONY : src/2d_surface/dampingForce.cpp.s
+src/hollow_net/dampingForce.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/dampingForce.cpp.s
+.PHONY : src/hollow_net/dampingForce.cpp.s
 
-src/2d_surface/elasticBendingForce.o: src/2d_surface/elasticBendingForce.cpp.o
-.PHONY : src/2d_surface/elasticBendingForce.o
+src/hollow_net/elasticPlate.o: src/hollow_net/elasticPlate.cpp.o
+.PHONY : src/hollow_net/elasticPlate.o
 
 # target to build an object file
-src/2d_surface/elasticBendingForce.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/elasticBendingForce.cpp.o
-.PHONY : src/2d_surface/elasticBendingForce.cpp.o
+src/hollow_net/elasticPlate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/elasticPlate.cpp.o
+.PHONY : src/hollow_net/elasticPlate.cpp.o
 
-src/2d_surface/elasticBendingForce.i: src/2d_surface/elasticBendingForce.cpp.i
-.PHONY : src/2d_surface/elasticBendingForce.i
+src/hollow_net/elasticPlate.i: src/hollow_net/elasticPlate.cpp.i
+.PHONY : src/hollow_net/elasticPlate.i
 
 # target to preprocess a source file
-src/2d_surface/elasticBendingForce.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/elasticBendingForce.cpp.i
-.PHONY : src/2d_surface/elasticBendingForce.cpp.i
+src/hollow_net/elasticPlate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/elasticPlate.cpp.i
+.PHONY : src/hollow_net/elasticPlate.cpp.i
 
-src/2d_surface/elasticBendingForce.s: src/2d_surface/elasticBendingForce.cpp.s
-.PHONY : src/2d_surface/elasticBendingForce.s
+src/hollow_net/elasticPlate.s: src/hollow_net/elasticPlate.cpp.s
+.PHONY : src/hollow_net/elasticPlate.s
 
 # target to generate assembly for a file
-src/2d_surface/elasticBendingForce.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/elasticBendingForce.cpp.s
-.PHONY : src/2d_surface/elasticBendingForce.cpp.s
+src/hollow_net/elasticPlate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/elasticPlate.cpp.s
+.PHONY : src/hollow_net/elasticPlate.cpp.s
 
-src/2d_surface/elasticPlate.o: src/2d_surface/elasticPlate.cpp.o
-.PHONY : src/2d_surface/elasticPlate.o
+src/hollow_net/elasticStretchingForce.o: src/hollow_net/elasticStretchingForce.cpp.o
+.PHONY : src/hollow_net/elasticStretchingForce.o
 
 # target to build an object file
-src/2d_surface/elasticPlate.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/elasticPlate.cpp.o
-.PHONY : src/2d_surface/elasticPlate.cpp.o
+src/hollow_net/elasticStretchingForce.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/elasticStretchingForce.cpp.o
+.PHONY : src/hollow_net/elasticStretchingForce.cpp.o
 
-src/2d_surface/elasticPlate.i: src/2d_surface/elasticPlate.cpp.i
-.PHONY : src/2d_surface/elasticPlate.i
+src/hollow_net/elasticStretchingForce.i: src/hollow_net/elasticStretchingForce.cpp.i
+.PHONY : src/hollow_net/elasticStretchingForce.i
 
 # target to preprocess a source file
-src/2d_surface/elasticPlate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/elasticPlate.cpp.i
-.PHONY : src/2d_surface/elasticPlate.cpp.i
+src/hollow_net/elasticStretchingForce.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/elasticStretchingForce.cpp.i
+.PHONY : src/hollow_net/elasticStretchingForce.cpp.i
 
-src/2d_surface/elasticPlate.s: src/2d_surface/elasticPlate.cpp.s
-.PHONY : src/2d_surface/elasticPlate.s
+src/hollow_net/elasticStretchingForce.s: src/hollow_net/elasticStretchingForce.cpp.s
+.PHONY : src/hollow_net/elasticStretchingForce.s
 
 # target to generate assembly for a file
-src/2d_surface/elasticPlate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/elasticPlate.cpp.s
-.PHONY : src/2d_surface/elasticPlate.cpp.s
+src/hollow_net/elasticStretchingForce.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/elasticStretchingForce.cpp.s
+.PHONY : src/hollow_net/elasticStretchingForce.cpp.s
 
-src/2d_surface/elasticStretchingForce.o: src/2d_surface/elasticStretchingForce.cpp.o
-.PHONY : src/2d_surface/elasticStretchingForce.o
+src/hollow_net/externalGravityForce.o: src/hollow_net/externalGravityForce.cpp.o
+.PHONY : src/hollow_net/externalGravityForce.o
 
 # target to build an object file
-src/2d_surface/elasticStretchingForce.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/elasticStretchingForce.cpp.o
-.PHONY : src/2d_surface/elasticStretchingForce.cpp.o
+src/hollow_net/externalGravityForce.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/externalGravityForce.cpp.o
+.PHONY : src/hollow_net/externalGravityForce.cpp.o
 
-src/2d_surface/elasticStretchingForce.i: src/2d_surface/elasticStretchingForce.cpp.i
-.PHONY : src/2d_surface/elasticStretchingForce.i
+src/hollow_net/externalGravityForce.i: src/hollow_net/externalGravityForce.cpp.i
+.PHONY : src/hollow_net/externalGravityForce.i
 
 # target to preprocess a source file
-src/2d_surface/elasticStretchingForce.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/elasticStretchingForce.cpp.i
-.PHONY : src/2d_surface/elasticStretchingForce.cpp.i
+src/hollow_net/externalGravityForce.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/externalGravityForce.cpp.i
+.PHONY : src/hollow_net/externalGravityForce.cpp.i
 
-src/2d_surface/elasticStretchingForce.s: src/2d_surface/elasticStretchingForce.cpp.s
-.PHONY : src/2d_surface/elasticStretchingForce.s
+src/hollow_net/externalGravityForce.s: src/hollow_net/externalGravityForce.cpp.s
+.PHONY : src/hollow_net/externalGravityForce.s
 
 # target to generate assembly for a file
-src/2d_surface/elasticStretchingForce.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/elasticStretchingForce.cpp.s
-.PHONY : src/2d_surface/elasticStretchingForce.cpp.s
+src/hollow_net/externalGravityForce.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/externalGravityForce.cpp.s
+.PHONY : src/hollow_net/externalGravityForce.cpp.s
 
-src/2d_surface/externalGravityForce.o: src/2d_surface/externalGravityForce.cpp.o
-.PHONY : src/2d_surface/externalGravityForce.o
+src/hollow_net/inertialForce.o: src/hollow_net/inertialForce.cpp.o
+.PHONY : src/hollow_net/inertialForce.o
 
 # target to build an object file
-src/2d_surface/externalGravityForce.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/externalGravityForce.cpp.o
-.PHONY : src/2d_surface/externalGravityForce.cpp.o
+src/hollow_net/inertialForce.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/inertialForce.cpp.o
+.PHONY : src/hollow_net/inertialForce.cpp.o
 
-src/2d_surface/externalGravityForce.i: src/2d_surface/externalGravityForce.cpp.i
-.PHONY : src/2d_surface/externalGravityForce.i
+src/hollow_net/inertialForce.i: src/hollow_net/inertialForce.cpp.i
+.PHONY : src/hollow_net/inertialForce.i
 
 # target to preprocess a source file
-src/2d_surface/externalGravityForce.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/externalGravityForce.cpp.i
-.PHONY : src/2d_surface/externalGravityForce.cpp.i
+src/hollow_net/inertialForce.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/inertialForce.cpp.i
+.PHONY : src/hollow_net/inertialForce.cpp.i
 
-src/2d_surface/externalGravityForce.s: src/2d_surface/externalGravityForce.cpp.s
-.PHONY : src/2d_surface/externalGravityForce.s
+src/hollow_net/inertialForce.s: src/hollow_net/inertialForce.cpp.s
+.PHONY : src/hollow_net/inertialForce.s
 
 # target to generate assembly for a file
-src/2d_surface/externalGravityForce.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/externalGravityForce.cpp.s
-.PHONY : src/2d_surface/externalGravityForce.cpp.s
+src/hollow_net/inertialForce.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/inertialForce.cpp.s
+.PHONY : src/hollow_net/inertialForce.cpp.s
 
-src/2d_surface/inertialForce.o: src/2d_surface/inertialForce.cpp.o
-.PHONY : src/2d_surface/inertialForce.o
+src/hollow_net/main.o: src/hollow_net/main.cpp.o
+.PHONY : src/hollow_net/main.o
 
 # target to build an object file
-src/2d_surface/inertialForce.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/inertialForce.cpp.o
-.PHONY : src/2d_surface/inertialForce.cpp.o
+src/hollow_net/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/main.cpp.o
+.PHONY : src/hollow_net/main.cpp.o
 
-src/2d_surface/inertialForce.i: src/2d_surface/inertialForce.cpp.i
-.PHONY : src/2d_surface/inertialForce.i
+src/hollow_net/main.i: src/hollow_net/main.cpp.i
+.PHONY : src/hollow_net/main.i
 
 # target to preprocess a source file
-src/2d_surface/inertialForce.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/inertialForce.cpp.i
-.PHONY : src/2d_surface/inertialForce.cpp.i
+src/hollow_net/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/main.cpp.i
+.PHONY : src/hollow_net/main.cpp.i
 
-src/2d_surface/inertialForce.s: src/2d_surface/inertialForce.cpp.s
-.PHONY : src/2d_surface/inertialForce.s
+src/hollow_net/main.s: src/hollow_net/main.cpp.s
+.PHONY : src/hollow_net/main.s
 
 # target to generate assembly for a file
-src/2d_surface/inertialForce.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/inertialForce.cpp.s
-.PHONY : src/2d_surface/inertialForce.cpp.s
+src/hollow_net/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/main.cpp.s
+.PHONY : src/hollow_net/main.cpp.s
 
-src/2d_surface/main.o: src/2d_surface/main.cpp.o
-.PHONY : src/2d_surface/main.o
+src/hollow_net/setInput.o: src/hollow_net/setInput.cpp.o
+.PHONY : src/hollow_net/setInput.o
 
 # target to build an object file
-src/2d_surface/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/main.cpp.o
-.PHONY : src/2d_surface/main.cpp.o
+src/hollow_net/setInput.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/setInput.cpp.o
+.PHONY : src/hollow_net/setInput.cpp.o
 
-src/2d_surface/main.i: src/2d_surface/main.cpp.i
-.PHONY : src/2d_surface/main.i
+src/hollow_net/setInput.i: src/hollow_net/setInput.cpp.i
+.PHONY : src/hollow_net/setInput.i
 
 # target to preprocess a source file
-src/2d_surface/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/main.cpp.i
-.PHONY : src/2d_surface/main.cpp.i
+src/hollow_net/setInput.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/setInput.cpp.i
+.PHONY : src/hollow_net/setInput.cpp.i
 
-src/2d_surface/main.s: src/2d_surface/main.cpp.s
-.PHONY : src/2d_surface/main.s
+src/hollow_net/setInput.s: src/hollow_net/setInput.cpp.s
+.PHONY : src/hollow_net/setInput.s
 
 # target to generate assembly for a file
-src/2d_surface/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/main.cpp.s
-.PHONY : src/2d_surface/main.cpp.s
+src/hollow_net/setInput.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/setInput.cpp.s
+.PHONY : src/hollow_net/setInput.cpp.s
 
-src/2d_surface/setInput.o: src/2d_surface/setInput.cpp.o
-.PHONY : src/2d_surface/setInput.o
+src/hollow_net/timeStepper.o: src/hollow_net/timeStepper.cpp.o
+.PHONY : src/hollow_net/timeStepper.o
 
 # target to build an object file
-src/2d_surface/setInput.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/setInput.cpp.o
-.PHONY : src/2d_surface/setInput.cpp.o
+src/hollow_net/timeStepper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/timeStepper.cpp.o
+.PHONY : src/hollow_net/timeStepper.cpp.o
 
-src/2d_surface/setInput.i: src/2d_surface/setInput.cpp.i
-.PHONY : src/2d_surface/setInput.i
+src/hollow_net/timeStepper.i: src/hollow_net/timeStepper.cpp.i
+.PHONY : src/hollow_net/timeStepper.i
 
 # target to preprocess a source file
-src/2d_surface/setInput.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/setInput.cpp.i
-.PHONY : src/2d_surface/setInput.cpp.i
+src/hollow_net/timeStepper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/timeStepper.cpp.i
+.PHONY : src/hollow_net/timeStepper.cpp.i
 
-src/2d_surface/setInput.s: src/2d_surface/setInput.cpp.s
-.PHONY : src/2d_surface/setInput.s
+src/hollow_net/timeStepper.s: src/hollow_net/timeStepper.cpp.s
+.PHONY : src/hollow_net/timeStepper.s
 
 # target to generate assembly for a file
-src/2d_surface/setInput.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/setInput.cpp.s
-.PHONY : src/2d_surface/setInput.cpp.s
+src/hollow_net/timeStepper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/timeStepper.cpp.s
+.PHONY : src/hollow_net/timeStepper.cpp.s
 
-src/2d_surface/timeStepper.o: src/2d_surface/timeStepper.cpp.o
-.PHONY : src/2d_surface/timeStepper.o
+src/hollow_net/world.o: src/hollow_net/world.cpp.o
+.PHONY : src/hollow_net/world.o
 
 # target to build an object file
-src/2d_surface/timeStepper.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/timeStepper.cpp.o
-.PHONY : src/2d_surface/timeStepper.cpp.o
+src/hollow_net/world.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/world.cpp.o
+.PHONY : src/hollow_net/world.cpp.o
 
-src/2d_surface/timeStepper.i: src/2d_surface/timeStepper.cpp.i
-.PHONY : src/2d_surface/timeStepper.i
-
-# target to preprocess a source file
-src/2d_surface/timeStepper.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/timeStepper.cpp.i
-.PHONY : src/2d_surface/timeStepper.cpp.i
-
-src/2d_surface/timeStepper.s: src/2d_surface/timeStepper.cpp.s
-.PHONY : src/2d_surface/timeStepper.s
-
-# target to generate assembly for a file
-src/2d_surface/timeStepper.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/timeStepper.cpp.s
-.PHONY : src/2d_surface/timeStepper.cpp.s
-
-src/2d_surface/world.o: src/2d_surface/world.cpp.o
-.PHONY : src/2d_surface/world.o
-
-# target to build an object file
-src/2d_surface/world.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/world.cpp.o
-.PHONY : src/2d_surface/world.cpp.o
-
-src/2d_surface/world.i: src/2d_surface/world.cpp.i
-.PHONY : src/2d_surface/world.i
+src/hollow_net/world.i: src/hollow_net/world.cpp.i
+.PHONY : src/hollow_net/world.i
 
 # target to preprocess a source file
-src/2d_surface/world.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/world.cpp.i
-.PHONY : src/2d_surface/world.cpp.i
+src/hollow_net/world.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/world.cpp.i
+.PHONY : src/hollow_net/world.cpp.i
 
-src/2d_surface/world.s: src/2d_surface/world.cpp.s
-.PHONY : src/2d_surface/world.s
+src/hollow_net/world.s: src/hollow_net/world.cpp.s
+.PHONY : src/hollow_net/world.s
 
 # target to generate assembly for a file
-src/2d_surface/world.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/2d_surface/world.cpp.s
-.PHONY : src/2d_surface/world.cpp.s
+src/hollow_net/world.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simDER.dir/build.make CMakeFiles/simDER.dir/src/hollow_net/world.cpp.s
+.PHONY : src/hollow_net/world.cpp.s
 
 # Help Target
 help:
@@ -378,36 +354,33 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... simDER"
-	@echo "... src/2d_surface/dampingForce.o"
-	@echo "... src/2d_surface/dampingForce.i"
-	@echo "... src/2d_surface/dampingForce.s"
-	@echo "... src/2d_surface/elasticBendingForce.o"
-	@echo "... src/2d_surface/elasticBendingForce.i"
-	@echo "... src/2d_surface/elasticBendingForce.s"
-	@echo "... src/2d_surface/elasticPlate.o"
-	@echo "... src/2d_surface/elasticPlate.i"
-	@echo "... src/2d_surface/elasticPlate.s"
-	@echo "... src/2d_surface/elasticStretchingForce.o"
-	@echo "... src/2d_surface/elasticStretchingForce.i"
-	@echo "... src/2d_surface/elasticStretchingForce.s"
-	@echo "... src/2d_surface/externalGravityForce.o"
-	@echo "... src/2d_surface/externalGravityForce.i"
-	@echo "... src/2d_surface/externalGravityForce.s"
-	@echo "... src/2d_surface/inertialForce.o"
-	@echo "... src/2d_surface/inertialForce.i"
-	@echo "... src/2d_surface/inertialForce.s"
-	@echo "... src/2d_surface/main.o"
-	@echo "... src/2d_surface/main.i"
-	@echo "... src/2d_surface/main.s"
-	@echo "... src/2d_surface/setInput.o"
-	@echo "... src/2d_surface/setInput.i"
-	@echo "... src/2d_surface/setInput.s"
-	@echo "... src/2d_surface/timeStepper.o"
-	@echo "... src/2d_surface/timeStepper.i"
-	@echo "... src/2d_surface/timeStepper.s"
-	@echo "... src/2d_surface/world.o"
-	@echo "... src/2d_surface/world.i"
-	@echo "... src/2d_surface/world.s"
+	@echo "... src/hollow_net/dampingForce.o"
+	@echo "... src/hollow_net/dampingForce.i"
+	@echo "... src/hollow_net/dampingForce.s"
+	@echo "... src/hollow_net/elasticPlate.o"
+	@echo "... src/hollow_net/elasticPlate.i"
+	@echo "... src/hollow_net/elasticPlate.s"
+	@echo "... src/hollow_net/elasticStretchingForce.o"
+	@echo "... src/hollow_net/elasticStretchingForce.i"
+	@echo "... src/hollow_net/elasticStretchingForce.s"
+	@echo "... src/hollow_net/externalGravityForce.o"
+	@echo "... src/hollow_net/externalGravityForce.i"
+	@echo "... src/hollow_net/externalGravityForce.s"
+	@echo "... src/hollow_net/inertialForce.o"
+	@echo "... src/hollow_net/inertialForce.i"
+	@echo "... src/hollow_net/inertialForce.s"
+	@echo "... src/hollow_net/main.o"
+	@echo "... src/hollow_net/main.i"
+	@echo "... src/hollow_net/main.s"
+	@echo "... src/hollow_net/setInput.o"
+	@echo "... src/hollow_net/setInput.i"
+	@echo "... src/hollow_net/setInput.s"
+	@echo "... src/hollow_net/timeStepper.o"
+	@echo "... src/hollow_net/timeStepper.i"
+	@echo "... src/hollow_net/timeStepper.s"
+	@echo "... src/hollow_net/world.o"
+	@echo "... src/hollow_net/world.i"
+	@echo "... src/hollow_net/world.s"
 .PHONY : help
 
 

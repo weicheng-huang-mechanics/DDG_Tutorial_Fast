@@ -250,7 +250,7 @@ void elasticPlate::setupGeometry()
 
 
     ifstream inFile1;
-	inFile1.open("inputdata/nodesInput.txt");
+	inFile1.open("inputdata/2d_surface/inputdata/nodesInput.txt");
 	double a, b;
 	nv = 0;
 	while(inFile1 >> a >> b)
@@ -267,7 +267,7 @@ void elasticPlate::setupGeometry()
 	inFile1.close();
 
 	ifstream inFile2;
-	inFile2.open("inputdata/edgeInput.txt");
+	inFile2.open("inputdata/2d_surface/inputdata/edgeInput.txt");
 	int d, e;
 	while(inFile2 >> d >> e)
 	{
@@ -281,7 +281,7 @@ void elasticPlate::setupGeometry()
 	inFile2.close();
 
 	ifstream inFile3;
-	inFile3.open("inputdata/bendingInput.txt");
+	inFile3.open("inputdata/2d_surface/inputdata/bendingInput.txt");
 	int f, g;
 	while(inFile3 >> f >> g)
 	{
@@ -295,7 +295,7 @@ void elasticPlate::setupGeometry()
 	inFile3.close();
 
 	ifstream inFile4;
-	inFile4.open("inputdata/constraint.txt");
+	inFile4.open("inputdata/2d_surface/inputdata/constraint.txt");
 	int aa1;
 	while(inFile4 >> aa1)
 	{
