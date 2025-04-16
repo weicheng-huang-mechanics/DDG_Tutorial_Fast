@@ -66,7 +66,7 @@ There are some dependencies required prior to compilation. All the codes are tes
 Afterwards, simply run the simulation using the ``run.sh`` script.
 
 ```bash
-./run.sh
+./simDER option.txt
 ```
 Note that the simulation parameters are contained in the ``option.txt`` and the user can modifed the values of them to see different physical effects in the simulation. 
 The geometrical characterization is included in the ``inputdata`` folder. For example, the geometry of ``2d_curve`` is contained in the folder ``inputdata/2d_curve/inputdata``.
