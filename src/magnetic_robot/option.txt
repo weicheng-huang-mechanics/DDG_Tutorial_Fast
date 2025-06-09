@@ -1,0 +1,35 @@
+render 1
+saveData 1
+YoungRod 1e6
+YoungPlate 5e7
+totalTime 5.0
+deltaTime 5e-3
+thickness 1e-2
+stol 1e-4
+forceTol 1e-4
+maxIter 100
+viscosity 10.0
+scaleRendering 3.0
+gVector 0.0 0.0 -10.0
+length 0.1
+width 0.2
+deltaLength 0.01
+Possion 0.0
+baVector 0.0 10.0 0.0
+brVector 0.0 0.0 2.0
+muZero 0.001
+cutIndex 0
+xNum 5
+yNum 15
+omega 20.0
+stiffness 1e3
+dBar 0.0011
+densityRod 3000.0
+densityPlate 3000.0
+mu 0.2
+epsilonV 1e-4
+rodLength 0.02
+rodRadius 5e-3
+nv 8
+xLength 0.08
+yLength 0.18
